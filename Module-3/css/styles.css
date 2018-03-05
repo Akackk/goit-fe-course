@@ -16,13 +16,17 @@ body {
 
 .wrapper {
 	margin: auto auto;
+	padding-top: 77px;
 	width: 900px;
-	height: 100%;
+	height: 2080px;
+}
+
+.header {
+	margin: 0 auto 103px;
 }
 
 .nav {
-	margin: 77px auto 103px;
-	text-align: center;
+	margin-left: 200px;
 }
 
 .nav li > a {
@@ -38,28 +42,28 @@ body {
 }
 
 .nav li {
-	margin: auto 20px;
-	width: 113px;
+	margin-right: 80px;
 	display: inline-block;
 
 }
 
 .main > div {
 	width: 420px;
-	height: 280px;
 	display: inline-block;
-	margin-bottom: 331px;
 }
 
-.first,
-.third,
-.fifth {
+.festival,
+.dream,
+.topsongs {
 	margin-right: 60px;
 }
 
-.text h4 {
-	padding-top: 32px;
-	padding-bottom: 32px;
+img {
+	margin-bottom: 32px;
+}
+
+h4 {
+	margin-bottom: 32px;
 	color: #b4ad9e;
 	font-family: 'Ubuntu', sans-serif;
 	font-size: 14px;
@@ -78,26 +82,16 @@ p {
 	font-size: 14px;
 	color: #626262;
 	line-height: 24px;
+	margin-bottom: 105px;
 }
 
-.button {
+button {
 	text-align: center;
 	width: 164px;
-	margin: auto;
+	margin-left: 368px;
 	height: 62px;
-}
-
-.button > a {
-	margin: auto;
-	padding: 21px 33px;
 	font-size: 20px;
-	border: 1px solid #626262;
-	width: 164px;
-	height: 60px;
-	line-height: 60px;
-	vertical-align: middle;
-	text-decoration: none;
 	color: #626262;
-	
+	background-color: none;
 }
 
