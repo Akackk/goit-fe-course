@@ -1,0 +1,223 @@
+@font-face{
+    font-family: "Open Sans";
+    src: url("../fonts/OpenSans-Bold.ttf")
+}
+
+@font-face{
+    font-family: "Open Sans Semibold";
+    src: url("../fonts/OpenSans-SemiBold.ttf")
+}
+
+@font-face{
+    font-family: "Open Sans Light";
+    src: url("../fonts/OpenSans-Light.ttf")
+}
+
+@font-face{
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Light.ttf")
+}
+
+@font-face{
+    font-family: "Roboto Black";
+    src: url("../fonts/Roboto-Black.ttf")
+}
+
+div.wrapper {
+	width: 1110px;
+	height: 1838px;
+	margin: 20px auto 0;
+}
+
+.header {
+	width: 1110px;
+	height: 31px;
+}
+
+.logo {
+	float: left;
+	width: auto;
+	height: auto;
+}
+
+.logo p {
+	font-size: 30px;
+	font-family: "Roboto";
+	text-transform: uppercase;
+	color: #515151; 
+}
+
+.logo p::first-letter {
+	color: #1abc9c;
+}
+
+.menu {
+	width: auto;
+	height: 30px;
+	float: right;
+	line-height: 30px;
+	vertical-align: middle;
+}
+
+ul li {
+	display: inline-block;
+}
+
+ul li:hover {
+	color: #1abc9c;
+}
+
+ul li:not(:last-of-type) {
+	margin-right: 34px;
+}
+
+ul li a {
+	font-size: 14px;
+	vertical-align: middle;
+	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	text-decoration: none;
+	color: #0f0101;
+}
+
+ul li:first-child a {
+	color: #1abc9c;
+}
+
+ul li a:hover {
+	color: #1abc9c;
+} 
+
+.main {
+	margin: 100px 0 0 0;
+	height: 881px;
+}
+
+.caption h2  {
+	text-align: center;
+	font-family: "Roboto Black";
+	font-size: 48px;
+	font-weight: bold;
+	color: #515151;
+	text-transform: uppercase;
+}
+
+.caption h2:after {
+	display: block;
+	content: "";
+    width: 164px;
+    border-bottom: 7px solid #1abc9c;
+    margin: 32px auto 0;
+}
+
+.cards {
+	margin-top: 90px;
+
+}
+
+.card {
+	width: 255px;
+	height: 322px;
+	position: relative;
+	float: left;
+	margin-right: 30px;
+	margin-bottom: 60px;	
+}
+
+.card.cool_lingerie {
+	margin-right: 0px;
+}
+
+.price {
+	height: 40px;
+	width: 40px;
+	background-color: #8c8c8c;
+	position: absolute; 
+	top: 0px;
+	right: 0px;
+	font-family: "Roboto Black";-
+	font-size: 18px;
+	line-height: 40px;
+	vertical-align: middle;
+	text-align: center;
+
+}
+
+.card a {
+	position: absolute;
+    font-family: "Roboto Black";
+    color: #fff;
+    width: 100%;
+    padding: 11px 0 11px 13px;
+    font-size: 18px;
+    text-transform: uppercase;
+	background-color: #323232;
+	left: 0px;
+	bottom: 0px;
+	width: 242px;
+	text-decoration: none;
+}
+
+.card:hover a {
+	background-color: #1abc9c;
+}
+
+.card:hover a span {
+	background-color: #7fd9c7;
+}
+
+.lastmain {
+	margin-top: 105px;
+	height: 650px;
+	width: 1110px;
+}
+
+.news {
+	width: 349px;
+	float: left;
+	margin-right: 32px;
+}
+
+.newscards {
+	margin-top: 81px;
+}
+
+.newscards div:last-child {
+	margin-right: 0px;
+	width: 347px;
+}
+
+h3 {
+	font-family: "Open Sans Semibold";
+	font-size: 18px;
+	margin-top: 15px;
+	line-height: 1.3;
+}
+
+.news h3:after {
+	display: block;
+	content: "";
+    width: 136px;
+    border-bottom: 3px solid #1abc9c;
+    margin: 16px auto 0 0;	
+}
+
+.news p {
+	font-family: "Open Sans";
+	font-size: 14px;
+	margin-top: 32px;
+	line-height: 1.5;
+}
+
+button {
+	background-color: #1abc9c;
+	border-radius: 3px;
+	width: 159px;
+	height: 50px;
+	font-family: "Open Sans Light";
+	font-size: 16px;
+	border: 1px solid #1abc9c;
+	color: #fff;
+	margin-top: 15px;
+}
