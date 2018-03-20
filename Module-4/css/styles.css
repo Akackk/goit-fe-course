@@ -29,9 +29,10 @@ div.wrapper {
 	margin: 20px auto 0;
 }
 
-.header {
-	width: 1110px;
-	height: 31px;
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
 }
 
 .logo {
@@ -125,7 +126,7 @@ ul li a:hover {
 	margin-bottom: 60px;	
 }
 
-.card.cool_lingerie {
+.card:nth-child(4n+4) {
 	margin-right: 0px;
 }
 
@@ -177,6 +178,7 @@ ul li a:hover {
 	width: 349px;
 	float: left;
 	margin-right: 32px;
+
 }
 
 .newscards {
@@ -208,16 +210,18 @@ h3 {
 	font-size: 14px;
 	margin-top: 32px;
 	line-height: 1.5;
+	margin-bottom: 40px;
 }
 
-button {
+.button {
 	background-color: #1abc9c;
 	border-radius: 3px;
-	width: 159px;
-	height: 50px;
 	font-family: "Open Sans Light";
 	font-size: 16px;
 	border: 1px solid #1abc9c;
 	color: #fff;
-	margin-top: 15px;
+	margin-top: 25px;
+	text-decoration: none;
+	padding: 15px 30px;
 }
+
