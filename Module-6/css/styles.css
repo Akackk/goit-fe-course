@@ -257,7 +257,7 @@ h3 {
 
   .title-block {
   	width: 950px;
-  	margin: 0 auto 95px;
+  	margin: 0 auto 0;
   }
 
   .title-block p {
