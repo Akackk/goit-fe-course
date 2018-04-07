@@ -1,0 +1,307 @@
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  src: url('../fonts/roboto-slab-v7-latin_cyrillic-regular.eot'); /* IE9 Compat Modes */
+  src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'),
+       url('../fonts/roboto-slab-v7-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/roboto-slab-v7-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/roboto-slab-v7-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/roboto-slab-v7-latin_cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/roboto-slab-v7-latin_cyrillic-regular.svg#RobotoSlab') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Droid Serif';
+	font-style: italic;
+	src:url('../fonts/DroidSerif-Italic.woff');
+}
+
+@font-face {
+	font-family: 'Wisdom Script';
+	font-style: normal;
+	src:url('../fonts/WisdomScriptAJ.woff');
+}
+
+
+
+body {
+	width: 1400px;
+	margin: 0 auto;
+}
+
+.wrapper {
+	width: 940px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+
+a {
+	text-decoration: none;
+}
+
+span {
+	font-family: 'Droid Serif';
+	font-style: italic;
+	color: #777777;
+}
+
+.card-text {
+	font-family: 'Roboto Slab';
+	padding: 7px;
+}
+
+.logo {
+	margin-right: auto;
+	font-family: 'Wisdom Script';
+	font-size: 26px;
+	color: #fed136;
+}
+
+.mnav,
+.list {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	line-height: 115px;
+}
+
+.list-items:not(:last-child) {
+	margin-right: 40px;
+}
+
+.list a {
+	text-transform: uppercase;
+	color: #000;
+	font-size: 14px;
+	font-family: 'Roboto Slab';
+}
+
+.shead {
+	width: 340px;
+	margin: 0 auto 80px;
+	text-align: center;
+}
+
+h2,
+.subtitle {
+	display: block;
+	text-align: center;
+	margin: auto;
+}
+
+.title {
+	font-size: 40px;
+	font-weight: bolder;
+	text-transform: uppercase;
+	margin: 110px auto 25px;
+}
+
+.subtitle {
+	font-size: 16px;
+	color: #929292;
+}
+
+/*--------------------CARDS------------------------*/
+
+.cards {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 80px;
+}
+
+.card-cont {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 125px;
+}
+
+.basket::before {
+	content: url(../images/Icon-Basket.png);
+	border-style: solid;
+	vertical-align: middle;
+	line-height: 94px;
+	border-width: 3px;
+	border-color: rgb(254, 209, 54);
+	border-radius: 50%;
+	margin-bottom: 29px;
+	width: 72px;
+	height: 71px;
+}
+
+.laptop::before {
+	content: url(../images/Icon-Laptop.png);
+	border-style: solid;
+	vertical-align: middle;
+	line-height: 94px;
+	border-width: 3px;
+	border-color: rgb(254, 209, 54);
+	border-radius: 50%;
+	margin-bottom: 25px;
+	width: 72px;
+	height: 71px;
+}
+
+
+.lock::before {
+	content: url(../images/Icon-Locked.png);
+	border-style: solid;
+	vertical-align: middle;
+	line-height: 94px;
+	border-width: 3px;
+	border-color: rgb(254, 209, 54);
+	border-radius: 50%;
+	margin-bottom: 29px;
+	width: 72px;
+	height: 71px;
+}
+
+.card {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+
+/*------------------------FOOTER------------------------*/
+
+.footer {
+	width: 1400px;
+	background-color: #222222;
+	margin: 0 auto;
+}
+
+.bg-image {
+	width: 100%;
+	height: 100%;
+	background-image: url("../images/Map Image.png");
+	background-repeat: no-repeat;
+	background-position: bottom right;
+}
+
+img[class="bg-map"] {
+	opacity: 0.3;
+}
+
+.cont-title .title {
+	color: #fff;
+}
+
+.footer .cont-title .subtitle {
+	margin-bottom: 80px;
+}
+
+.form-wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 30px;
+}
+
+.info {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	width: 49%;
+}
+
+.info input {
+	height: 25%;
+	padding-left: 20px;
+}
+
+input {
+	border-width: 0;
+	border-radius: 5px;
+}
+
+input[name="user-name"]:focus:valid,
+input[name="user-email"]:focus:valid,
+textarea[name="user-message"]:focus:valid {
+	outline: 3px solid green;
+}
+
+input[name="user-name"]:focus:invalid,
+input[name="user-email"]:focus:invalid,
+textarea[name="user-message"]:focus:invalid {
+	outline: 3px solid red;
+}
+
+.area {
+	width: 49%;
+}
+
+.area textarea {
+	resize: none;
+	width: 100%;
+}	 
+
+::-webkit-input-placeholder {
+	color: #bbbbbb;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+
+textarea {
+	padding: 20px;
+	font-size: 14px;
+	border-width: 0;
+	border-radius: 5px;
+	height: 100%;
+	box-sizing: border-box;
+}
+
+
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+textarea::-webkit-input-placeholder {
+	font-size: 16px;
+	text-transform: uppercase;		
+}
+
+.button {
+	text-align: center;
+	margin-bottom: 115px;
+}
+
+input[value="send message"] {
+	background-color: #fed136;
+	border: none;
+	border-radius: 5px;
+	padding: 25px 50px;
+	color: #fff;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
