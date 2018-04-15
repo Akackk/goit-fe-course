@@ -1,0 +1,316 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	width: 320px;
+	height: auto;
+	margin: 0 auto;
+}
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+	display: block;
+	text-align: center;
+} 
+
+
+.headinfo {
+	background-image: url('../img/BG Mobile.png');
+	background-repeat: no-repeat;
+}
+
+.headinfo .log_in:hover,
+.headinfo .sing_up:hover {
+	border-color: rgb(255, 255, 255);
+}
+
+.log_in {
+	margin-right: 1.25rem;
+}
+
+.sing_up,
+.log_in {
+	font-size: 0.875rem;
+	font-family: "Montserrat";
+	color: #fff;
+	font-weight: bold;
+	line-height: 1.2;
+	text-align: center;
+	text-decoration: none;
+	padding: 0.714rem 1rem;
+	background-color: transparent;
+	border-width: 0.125rem;
+	border-style: solid;
+	border-color: transparent;
+	border-radius: 1.25rem;
+	margin-top: 1.125rem;
+	display: inline-block;
+}
+
+.suptitle {
+	margin-bottom: 1.5rem;
+	color: #fff;
+	font-family: "Montserrat";
+	font-size: 1.25rem;
+	font-weight: bold;
+	letter-spacing: 0.1rem;
+	display: block;
+	margin-top: 7.5rem;
+}
+
+.title {
+	color: #fff;
+	font-size: 1.875rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-family: "Montserrat";
+	margin-bottom: 0.5rem;
+	line-height: 1.2;
+}
+
+.subtitle {
+	font-family: "Roboto Light";
+	font-size: 1.125rem;	
+	color: #fff;
+	line-height: 1.2;
+	text-align: center;
+	margin: 0 auto 1.25rem;
+	display: block;
+}
+
+
+.find {
+	font-size: 0.875rem;
+	font-family: "Montserrat";
+	font-weight: bold;
+	line-height: 1.2;
+	text-align: center;
+	padding: 0.937rem 3.125rem;
+	background-color: #ff4e50;
+	border: none;
+	border-radius: 2rem;
+	margin-bottom: 8.550rem;
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+}
+
+.cards {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	margin: 1.250rem auto 0;
+}
+
+.cards-title {
+	font-size: 1.375rem;
+	font-family: "Montserrat";
+	color: rgb(51, 51, 51);
+	font-weight: bold;
+	line-height: 1.2;
+	margin-top: 4.375rem;
+}
+
+.cards img {
+	margin-bottom: 1.375rem;
+}
+
+.card-text {
+	font-size: 14px;
+	font-family: "Roboto";
+	color: rgb(102, 102, 102);
+	line-height: 1.2;
+	text-align: center;
+}
+
+.card-title {
+	margin-bottom: 1rem;
+}
+
+
+
+.card {
+	position: relative;
+	display: block;
+	/*margin: 1.9rem auto 0;*/
+	margin-bottom: 1.875rem;
+	width: 12.5rem;
+	height: auto;
+}
+
+.card-badge {
+	position: absolute;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 60%;
+	width: 2rem;
+	height: 2rem;
+	border-width: 0.25rem;
+	border-style: solid;
+	border-color: #fff;
+	border-radius: 50%;
+}
+
+.b_h_m .card-badge {
+	background-image: url("../img/telev.png");
+	background-color: #ff4e50;
+	right: 40px;
+	bottom: 90px;
+}
+
+.l_m .card-badge {
+	background-image: url("../img/kolba.png");
+	background-color: #ffa507;
+	right: 40px;
+	bottom: 125px;
+}
+
+.h_w .card-badge {
+	background-image: url("../img/cofee.png");
+	background-color: #1cd7ad;
+	right: 40px;
+	bottom: 110px;
+}
+
+.b_h_g .card-badge {
+	background-image: url("../img/airpl.png");
+	background-color: #4e73db;
+	right: 40px;
+	bottom: 95px;
+}
+
+
+.card-title {
+	font-size: 0.875rem;
+	font-family: "Montserrat";
+	color: rgb(51, 51, 51);
+	font-weight: bold;
+	line-height: 1.2;
+}
+
+.another {
+	display: inline-block;
+	padding: 1rem 4.562rem;
+	background-color: transparent;
+	border-radius: 2rem;
+	border-width: 0.125rem;
+	border-style: solid;
+	border-color: #ff4e50;
+	box-shadow: none;
+	color: #ff4e50;
+	margin: 1.9rem auto 3.562rem;
+	font-size: 0.875rem;
+	font-family: "Montserrat";
+	/*color: #fff;*/
+	font-weight: bold;
+	line-height: 1.2;
+}
+
+.another:hover {
+	background-color: #ff4e50;
+	color: #fff;
+}
+
+@media (min-device-width: 768px) and (max-device-width: 1439px) {
+	body {
+		width: 768px;
+	}
+
+	.headinfo {
+		background-image: url('../img/BG Tablet.png');
+		display: flex;
+		justify-content: center;
+	}
+
+
+	.header {
+		width: 100%;
+		padding: 0 20px 0 20px;
+		display: flex;
+		flex-direction: row;
+		align-items: baseline;
+		justify-content: center;
+	}
+	.wrapper {
+		width: 768px;
+	}
+	
+	.partners .wrapper {
+		width: 490px;
+		margin: 0 auto;
+	}
+
+	.cards {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.suptitle {
+		order: -1;
+		margin: 0 auto 0 0;
+	}
+
+	.find {
+		margin-bottom: 270px;
+	}
+	.title {
+		width: 40%;
+		margin: 150px auto 40px;
+	}
+}
+
+
+@media (min-device-width: 1440px) {
+	body {
+		width: 1440px;
+	}
+
+	.headinfo {
+		background-image: url('../img/BG Desctop.png');
+		display: flex;
+		justify-content: center;
+	}
+
+	.header {
+		display: flex;
+		flex-direction: row;
+		align-items: baseline;
+		justify-content: center;
+	}
+
+	.suptitle {
+		order: -1;
+		margin: 0 auto 0 0;
+	}
+
+	.wrapper {
+		width: 940px;
+		margin: auto;
+	}
+
+	.partners .wrapper {
+		text-align: center;
+	}
+
+	.cards {
+		display: flex;
+		-webkit-flex-direction: row;
+		-moz-flex-direction: row;
+		-ms-flex-direction: row;
+		-o-flex-direction: row;
+		flex-direction: row;	
+	}
+
+	.title {
+		width: 40%;
+		margin: 150px auto 40px;
+	}
+}
+
