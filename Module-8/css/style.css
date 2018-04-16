@@ -260,6 +260,7 @@ body {
 	.find {
 		margin-bottom: 270px;
 	}
+
 	.title {
 		width: 40%;
 		margin: 150px auto 40px;
@@ -312,5 +313,10 @@ body {
 		width: 40%;
 		margin: 150px auto 40px;
 	}
+
+		.find {
+		margin-bottom: 270px;
+	}
+
 }
 
