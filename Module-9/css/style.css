@@ -1,0 +1,300 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	margin: 0 auto;
+}
+
+a {
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+
+a:hover {
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+
+
+.headinfo {
+	width: 320px;
+	/*display: flex;*/
+	/*flex-direction: column;*/
+	/*justify-content: center;*/
+	background-image: url('../img/BG Mobile.png');
+	background-repeat: no-repeat;
+	margin: auto;
+}
+}
+
+.header {
+	vertical-align: middle;
+}
+
+.sing_up,
+.log_in {
+	font-size: 0.875rem;
+	font-family: "Montserrat";
+	color: #fff;
+	font-weight: bold;
+	line-height: 1.2;
+	text-align: center;
+	text-decoration: none;
+	padding: 0.714rem 1rem;
+	background-color: transparent;
+	border-width: 0.125rem;
+	border-style: solid;
+	border-color: transparent;
+	border-radius: 1.25rem;
+	margin-top: 1.125rem;
+	display: inline-block;
+}
+
+.headinfo .log_in:hover,
+.headinfo .sing_up:hover {
+	border-color: rgb(255, 255, 255);
+}
+
+.suptitle {
+	margin-bottom: 1.5rem;
+	color: #fff;
+	font-family: "Montserrat";
+	font-size: 1.25rem;
+	font-weight: bold;
+	letter-spacing: 0.1rem;
+	display: block;
+	margin-top: 6.525rem;
+}
+
+.title {
+	color: #fff;
+	text-align: center;
+	font-size: 1.875rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-family: "Montserrat";
+	margin-bottom: 0.5rem;
+	margin-top: 0.5rem;
+	line-height: 1.2;
+
+}
+
+.subtitle {
+	font-family: "Roboto Light";
+	font-size: 1.125rem;	
+	color: #fff;
+	line-height: 1.2;
+	text-align: center;
+	margin: 0 auto 1.25rem;
+	display: block;
+}
+
+
+
+
+.my-cont {
+	margin: 0;
+}
+
+.find {
+	font-size: 0.875rem;
+	font-family: "Montserrat";
+	font-weight: bold;
+	line-height: 1.2;
+	text-align: center;
+	padding: 0.937rem 3.125rem;
+	background-color: #ff4e50;
+	border: none;
+	border-radius: 2rem;
+	margin: 0 auto;
+	margin-bottom: 7.750rem;
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+}
+
+.partners {
+	width: 320px;
+	margin: 0 auto;
+}
+
+.cards-title {
+	font-size: 1.375rem;
+	font-family: "Montserrat";
+	color: rgb(51, 51, 51);
+	font-weight: bold;
+	line-height: 1.2;
+	margin-top: 4.375rem;
+	flex-wrap: wrap;
+	text-align: center;
+
+}
+
+
+.cards img {
+	margin-bottom: 1.375rem;
+}
+
+.card-text {
+	font-size: 14px;
+	font-family: "Roboto";
+	color: rgb(102, 102, 102);
+	line-height: 1.2;
+	text-align: center;
+}
+
+.card-title {
+	margin-bottom: 1rem;
+}
+
+.cardes {
+	position: relative;
+	display: block;
+	margin: auto;
+	margin-bottom: 1.875rem;
+	margin-top: 0;
+	width: 12.5rem;
+	height: auto;
+}
+
+.card-badge {
+	position: absolute;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 60%;
+	width: 2rem;
+	height: 2rem;
+	border-width: 0.25rem;
+	border-style: solid;
+	border-color: #fff;
+	border-radius: 50%;
+}
+
+.b_h_m .card-badge {
+	background-image: url("../img/telev.png");
+	background-color: #ff4e50;
+	right: 40px;
+	bottom: 105px;
+}
+
+.l_m .card-badge {
+	background-image: url("../img/kolba.png");
+	background-color: #ffa507;
+	right: 40px;
+	bottom: 150px;
+}
+
+.h_w .card-badge {
+	background-image: url("../img/cofee.png");
+	background-color: #1cd7ad;
+	right: 40px;
+	bottom: 130px;
+}
+
+.b_h_g .card-badge {
+	background-image: url("../img/airpl.png");
+	background-color: #4e73db;
+	right: 40px;
+	bottom: 105px;
+}
+
+
+.card-title {
+	font-size: 0.875rem;
+	font-family: "Montserrat";
+	color: rgb(51, 51, 51);
+	font-weight: bold;
+	line-height: 1.2;
+}
+
+li {
+	text-align: center;
+}
+
+.cards-title {
+	margin: 3rem auto 1rem;
+}
+
+
+
+@media (min-device-width: 768px) and (max-device-width: 1439px) {
+
+	.wrapper {
+		width: 748px;
+		margin: 0 auto;
+	}
+	
+	.headinfo {
+		width: 768px;
+		background-image: url('../img/BG Tablet.png');
+	}
+
+	.title {
+		font-size: 3.25rem;
+		margin-top: 9rem;
+	}
+
+	.logsing {
+		justify-content: space-between;
+	}
+
+	.suptitle {
+		margin-top: 1rem;
+	}
+
+	.find {
+		margin-bottom: 15.35rem;
+	}
+
+	.partners {
+		width: 768px;
+		margin: 0 auto;
+	}
+
+	.cards {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: start;
+	}
+}
+
+
+@media (min-device-width: 1200px) {
+
+	.wrapper {
+
+		width: 940px;
+		margin: 0 auto;
+	}
+	
+	.headinfo {
+		width: 1200px;
+		background-image: url('../img/BG Desctop.png');
+	}
+
+	.title {
+		font-size: 3.25rem;
+		margin-top: 6.5rem;
+	}
+
+	.suptitle {
+		margin-top: 3.525rem;
+	}
+
+	.find {
+		margin-bottom: 15.35rem;
+	}
+
+	.partners {
+		width: 1200px;
+	}
+}
+
+
