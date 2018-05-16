@@ -1,0 +1,106 @@
+.main-wrapper-black {
+    min-width: 320px;
+    padding-top: 30px;
+    background-color: var(--dark-fone);
+}
+.content-container{
+    max-width: 320px;
+    margin: 0 auto;
+    background-color: var(--dark-fone);
+}
+
+:root {
+    --main-color: rgb(0, 188, 212);
+    --dark-fone: rgb(43, 42, 47);
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.training-center {
+    font-size: 11px;
+    font-family: "MuseoSansCyrl";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.455;
+    text-align: left;
+    display: none;
+}
+
+.training-help {
+    display: none;
+    font-size: 14px;
+    font-family: "UbuntuMono";
+    color: rgb(255, 255, 255);
+    line-height: 1.429;
+    text-align: left;
+}
+
+.start {
+    text-transform: uppercase;
+    text-align: center;
+    padding: 5px 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--main-color);
+    color: white;
+    display: block;
+}
+
+.start-date {
+    display: none;
+}
+
+.tel {
+    font-size: 14px;
+    font-family: "UbuntuMono";
+    color: var(--main-color);
+    font-weight: bold;
+    line-height: 1.429;
+    text-align: left;
+    border-bottom: 1px solid var(--main-color);
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .content-container {
+        min-width: 768px;
+    }
+
+    .training-center {
+        display: block;
+    }
+
+    .start-date {
+        display: block;
+    }
+}
+
+@media (min-width: 1920px) {
+    .content-container {
+        min-width: 1146px;
+    }
+
+    .training-center {
+        font-size: 15px;
+        font-family: "MuseoSansCyrl";
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        line-height: 1.333;
+    }
+
+    .training-help {
+        display: block;
+    }
+
+    .tel {
+        font-size: 20px;
+    }
+}
+
+.date {
+    color: var(--main-color );
+}
+
