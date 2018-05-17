@@ -129,7 +129,7 @@ a {
 @media (min-width: 1920px) {
     
     .bg-image-black {
-        width: 100%;
+        width: 1920px;
         height: 100%;
         position: absolute;
         left: 500px;
