@@ -1,0 +1,355 @@
+body {
+  margin: 0 auto;
+}
+
+.main-wrapper {
+  margin: 0 auto;
+  background-color: var(--dark-fone);
+}
+
+.main-wrapper-black {
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 1920px;
+  height: 845px;
+  padding-top: 30px;
+  background-color: var(--dark-fone);
+  position: relative;
+}
+
+.content-container {
+  max-width: 320px;
+  margin: 0 auto;
+  position: relative;
+  background-color: var(--dark-fone);
+}
+
+:root {
+  --main-color: rgb(0, 188, 212);
+  --dark-fone: rgb(43, 42, 47);
+  --font-caption: ‘Montserrat’, sans-serif;
+  --semi-font: ‘Ubuntu Mono’, monospace;
+  --list-text: ‘Open Sans’, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.training-center {
+  font-size: 11px;
+  font-family: var(--font-caption);
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.455;
+  text-align: left;
+  display: none;
+}
+
+.training-help {
+  display: none;
+  font-size: 14px;
+  font-family: var(--semi-font);
+  color: rgb(255, 255, 255);
+  line-height: 1.429;
+  text-align: left;
+}
+
+.logo-padding {
+  padding-right: 20px;
+}
+
+/*Дата старта курса*/
+
+.start {
+  text-transform: uppercase;
+  text-align: center;
+  padding: 5px 10px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--main-color);
+  color: white;
+  /*display: block;*/
+}
+
+.start-date {
+  /*display: none;*/
+  z-index: 3;
+  order: 2;
+  align-self: center;
+  margin: 0 auto;
+}
+
+.phone {
+  z-index: 3;
+}
+
+.write-to-course > p {
+  display: none;
+  position: relative;
+  top: 0px;
+}
+
+.tel {
+  font-size: 14px;
+  font-family: var(--semi-font);
+  color: var(--main-color);
+  font-weight: bold;
+  line-height: 1.429;
+  text-align: left;
+  border-bottom: 1px solid var(--main-color);
+  display: block;
+}
+
+.set-age {
+  font-size: 13px;
+  font-family: var(--font-caption);
+  color: rgb(199, 199, 199);
+  line-height: 1.538;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/*Black Block position*/
+.black-block {
+  position: relative;
+}
+
+.hud-image {
+  position: absolute;
+  right: -37%;
+  display: none;
+}
+
+.date {
+  color: var(--main-color);
+}
+
+.begin-to-work > h5 {
+  font-size: 14px;
+  font-family: var(--semi-font);
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 2.222;
+  text-align: center;
+}
+
+.begin-to-work > p {
+  font-size: 16px;
+  font-family: var(--font-caption);
+  color: rgb(196, 196, 196);
+  line-height: 1.875;
+  text-align: center;
+}
+
+.begin-to-work:after {
+  content: "";
+  display: block;
+  border-bottom: 4px solid var(--main-color);
+  width: 80%;
+  margin: 0 auto;
+}
+
+.main-color {
+  color: var(--main-color);
+}
+
+.main-caption {
+  text-transform: uppercase;
+  color: white;
+}
+
+.main-caption h1 {
+  font-size: 30px;
+  font-family: var(--font-caption);
+  /*color: rgb(0, 188, 212);*/
+  text-transform: uppercase;
+  line-height: 1.333;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 136px;
+}
+
+.help-you p {
+  font-size: 16px;
+  font-family: var(--font-caption);
+  color: rgb(255, 255, 255);
+  line-height: 1.25;
+  text-align: left;
+  padding-top: 35px;
+  /*margin: 0 auto;*/
+  text-align: center;
+}
+
+.help-you:before {
+  content: "";
+  display: block;
+  border-bottom: 2px solid var(--main-color);
+  width: 120px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .content-container {
+    min-width: 768px;
+  }
+
+  .training-center {
+    display: block;
+  }
+
+  .start-date {
+    display: block;
+    order: 0;
+  }
+
+  .bg-image-black {
+    width: 651px;
+    height: 337px;
+    position: absolute;
+    left: 100px;
+    background: url("../img/bg-black-section-768.png") no-repeat 0 0;
+  }
+}
+
+@media (min-width: 1920px) {
+
+  .feedback-block {
+    background-image: -moz-radial-gradient(50% 50%, rgb(19, 13, 34) 0%, rgb(12, 11, 30) 100%);
+    background-image: -webkit-radial-gradient(50% 50%, rgb(19, 13, 34) 0%, rgb(12, 11, 30) 100%);
+    background-image: -ms-radial-gradient(50% 50%, rgb(19, 13, 34) 0%, rgb(12, 11, 30) 100%);
+    box-shadow: 0px 18px 40px 0px rgba(28, 28, 30, 0.22);
+    height: 935px;
+    position: absolute;
+    z-index: 2;
+    top: -113px;
+  }
+
+  .bg-image-black {
+    width: 1247px;
+    height: 648px;
+    position: absolute;
+    left: -400px;
+    /*top: -500px;*/
+    background: url('../img/bg-black-section.png') no-repeat 0 0;
+  }
+
+  .logo-position {
+    position: absolute;
+    left: -330px;
+  }
+
+  .content-container {
+    max-width: 1146px;
+    min-width: 1146px;
+  }
+
+  .training-center {
+    font-size: 15px;
+    font-family: var(--font-caption);
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.333;
+  }
+
+  .training-center p {
+    margin-bottom: 0px;
+  }
+
+  .training-help {
+    display: block;
+    font-size: 14px;
+    font-family: var(--semi-font);
+    color: rgb(255, 255, 255);
+    line-height: 1.429;
+    padding-top: 10px;
+  }
+
+  /*Дата старта курса*/
+  .write-to-course > p {
+    position: absolute;
+    top: -30px;
+    font-size: 16px;
+    font-weight: bolder;
+    font-family: var(--font-caption);
+    color: rgb(36, 36, 39);
+    text-transform: uppercase;
+    line-height: 1.25;
+    text-align: left;
+    background-color: #fff;
+    padding: 10px 16px;
+    display: flex;
+  }
+
+  .start-date {
+    transform: rotate(90deg);
+    position: relative;
+    top: 0px;
+  }
+
+  .start-date p {
+
+    text-align: right;
+  }
+
+  .start {
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+  }
+
+  .write-to-course {
+    display: block;
+  }
+
+  /*Блок с номером телефона*/
+  .phone {
+    position: relative;
+    right: -150px;
+  }
+
+  .tel {
+    font-size: 20px;
+    padding-top: 15px;
+  }
+
+  .hud-image {
+    display: block;
+  }
+
+  /*Заголовок и субзаголовок*/
+  .begin-to-work {
+  }
+
+  .begin-to-work h5 {
+    font-size: 26px;
+    line-height: 2;
+    text-align: right;
+    padding-top: 200px;
+    padding-right: 70px;
+  }
+
+  .begin-to-work p {
+    font-size: 24px;
+    line-height: 1.125;
+    text-align: right;
+    padding-right: 70px;
+  }
+
+  .main-caption h1 {
+    font-size: 64px;
+    font-family: var(--font-caption);
+    text-transform: uppercase;
+    line-height: 1.172;
+    text-align: right;
+    padding-right: 70px;
+    padding-top: 37px;
+  }
+}
+
+
+

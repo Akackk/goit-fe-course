@@ -11,7 +11,7 @@ body {
     margin: 0 auto;
     min-width: 320px;
     max-width: 1920px;
-    height: 845px;
+    height: 580px;
     padding-top: 30px;
     background-color: var(--dark-fone);
     position: relative;
@@ -58,6 +58,10 @@ a {
 
 .logo-padding {
     padding-right: 20px;
+}
+
+.start-full-stack {
+    position: relative;
 }
 
 /*Дата старта курса*/
@@ -150,6 +154,8 @@ a {
     content: "";
     display: block;
     border-bottom: 4px solid var(--main-color);
+    width: 50%;
+    margin: 0 auto;
 }
 
 .main-color {
@@ -169,10 +175,10 @@ a {
     line-height: 1.333;
     text-align: center;
     font-weight: bold;
-    padding-top: 136px;
+    padding-top: 20px;
 }
 
-.help-you p {
+.help-you > p {
     font-size: 16px;
     font-family: var(--font-caption);
     color: rgb(255, 255, 255);
@@ -181,17 +187,68 @@ a {
     padding-top: 35px;
     /*margin: 0 auto;*/
     text-align: center;
+    margin-bottom: 0;
+}
+
+.help-you p:last-child {
+    padding-top: 15px;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .help-you:before {
     content: "";
-    display: block;
+    display: none;
     border-bottom: 2px solid var(--main-color);
     width: 120px;
     margin: 0 auto;
 }
 
+.ready-portfolio {
+    padding-top: 110px;
+    padding-left: 30px;
+    display: none;
+    flex-direction: row;
+}
+
+.ready-portfolio h5 {
+    font-weight: bold;
+    font-size: 16px;
+    font-family: var(--font-caption);
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.375;
+}
+
+.none {
+    display: none;
+}
+
+.ready-portfolio p {
+    font-size: 16px;
+    font-family: var(--semi-font);
+    color: rgb(255, 255, 255);
+    line-height: 1.125;
+}
+
+.pseudo p:before {
+    content: "<_";
+    font-size: 25px;
+    /*font-weight: bold;*/
+    font-family: var(--semi-font);
+    color: var(--main-color);
+    line-height: 1.04;
+    text-align: left;
+    margin-left: -27px;
+
+}
+
 @media (min-width: 768px) {
+
+    .main-wrapper-black {
+        height: 630px;
+    }
+
     .content-container {
         min-width: 768px;
     }
@@ -210,11 +267,52 @@ a {
         height: 337px;
         position: absolute;
         left: 100px;
+        top: 170px;
         background: url("../img/bg-black-section-768.png") no-repeat 0 0;
+    }
+
+    .begin-main-caption {
+        align-items: center;
+    }
+
+    .begin-to-work:after {
+        width: 80%;
+    }
+
+    .help-you:before {
+        display: block;
+    }
+
+    .border-style {
+        position: relative;
+    }
+
+    .border-style:after {
+        content: " ";
+        position: absolute;
+        right: 30px;
+        top: -10px;
+        border-width: 1px;
+        border-color: rgb(255, 255, 255);
+        border-style: solid;
+        /*width: 100px;*/
+        height: 90px;
+        /*background-color: rgb(0, 188, 212);*/
+    }
+
+    .ready-portfolio {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
     }
 }
 
 @media (min-width: 1920px) {
+
+    .main-wrapper-black {
+        height: 845px;
+    }
 
     .feedback-block {
         background-image: -moz-radial-gradient(50% 50%, rgb(19, 13, 34) 0%, rgb(12, 11, 30) 100%);
@@ -320,13 +418,18 @@ a {
     }
 
     /*Заголовок и субзаголовок*/
+
+    .begin-main-caption {
+        align-items: flex-start;
+    }
+
     .begin-to-work {
     }
 
     .begin-to-work h5 {
         font-size: 26px;
         line-height: 2;
-        text-align: right;
+        text-align: left;
         padding-top: 200px;
         padding-right: 70px;
     }
@@ -334,8 +437,12 @@ a {
     .begin-to-work p {
         font-size: 24px;
         line-height: 1.125;
-        text-align: right;
+        text-align: left;
         padding-right: 70px;
+    }
+
+    .begin-to-work:after {
+        margin-left: 0;
     }
 
     .main-caption h1 {
@@ -346,6 +453,46 @@ a {
         text-align: right;
         padding-right: 70px;
         padding-top: 37px;
+    }
+    
+    .help-you > p {
+        text-align: left;
+    }
+
+    .help-you p:last-child {
+        margin-left: 0;
+    }
+
+    .help-you:before {
+        position: relative;
+        right: 650px;
+        top: 45px;
+        /*margin-left: 0;*/
+    }
+
+    .ready-portfolio {
+        flex-direction: column;
+        /*width: 280px;*/
+    }
+
+    .ready-portfolio-all {
+        position: absolute;
+        top: 278px;
+        right: -70px;
+        z-index: 3;
+        width: 650px;
+    }
+
+    .border-style {
+        margin-bottom: 30px;
+    }
+
+    .border-style:after {
+        transform: rotate(90deg);
+        top: -5px;
+        right: 60px;
+        height: 158px;
+
     }
 }
 
