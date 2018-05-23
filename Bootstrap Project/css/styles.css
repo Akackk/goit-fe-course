@@ -106,6 +106,19 @@ a {
     display: block;
 }
 
+.tel:hover {
+    font-size: 14px;
+    font-family: var(--semi-font);
+    color: var(--main-color);
+    font-weight: bold;
+    line-height: 1.429;
+    text-align: left;
+    border-bottom: 1px solid var(--main-color);
+    display: block;
+    text-decoration: none;
+
+}
+
 .set-age {
     font-size: 13px;
     font-family: var(--font-caption);
