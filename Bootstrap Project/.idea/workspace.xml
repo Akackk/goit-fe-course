@@ -13,16 +13,17 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.64533824">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1326">
-                  <caret line="78" column="50" lean-forward="true" selection-start-line="78" selection-start-column="50" selection-end-line="78" selection-end-column="50" />
+                <state relative-caret-position="377">
+                  <caret line="110" column="108" selection-start-line="110" selection-start-column="108" selection-end-line="110" selection-end-column="108" />
                   <folding>
-                    <marker date="1527081961336" expanded="true" signature="3465:3546" ph="..." />
+                    <element signature="e#6974#6980#0" expanded="true" />
+                    <element signature="e#7008#7014#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -31,12 +32,12 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="styles.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/css/styles.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="639">
-                  <caret line="493" column="19" selection-start-line="493" selection-start-column="19" selection-end-line="493" selection-end-column="19" />
+                <state relative-caret-position="180">
+                  <caret line="534" column="38" selection-start-line="534" selection-start-column="38" selection-end-line="534" selection-end-column="38" />
                 </state>
               </provider>
             </entry>
@@ -60,6 +61,7 @@
       <find>main-co</find>
       <find>help-you</find>
       <find>ready</find>
+      <find>any-from</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -91,7 +93,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -113,6 +114,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -147,18 +149,19 @@
       <updated>1526460139011</updated>
       <workItem from="1526460140260" duration="13392000" />
       <workItem from="1526499939162" duration="26600000" />
-      <workItem from="1526988911908" duration="17046000" />
+      <workItem from="1526988911908" duration="25684000" />
+      <workItem from="1527243160481" duration="8137000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57038000" />
+    <option name="totallyTimeSpent" value="73813000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.13540569" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.13540569" />
       <window_info anchor="bottom" id="TODO" order="10" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" weight="0.32897604" />
@@ -171,11 +174,11 @@
       <window_info active="true" anchor="bottom" id="CSS Styles" order="11" weight="0.32897604" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="4" />
-      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="5" />
+      <window_info anchor="bottom" id="Message" order="4" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,10 +190,29 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1955">
+          <caret line="115" column="63" selection-start-line="115" selection-start-column="63" selection-end-line="115" selection-end-column="63" />
+          <folding>
+            <element signature="e#6974#6980#0" expanded="true" />
+            <element signature="e#7008#7014#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5797">
+          <caret line="341" column="22" selection-start-line="341" selection-start-column="22" selection-end-line="341" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1003">
           <caret line="59" column="52" selection-start-line="59" selection-start-column="52" selection-end-line="59" selection-end-column="52" />
           <folding>
-            <marker date="1527081961336" expanded="true" signature="3465:3546" ph="..." />
+            <element signature="e#6974#6980#0" expanded="true" />
+            <element signature="e#7008#7014#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -226,20 +248,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/img/coruchka-1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1326">
-          <caret line="78" column="50" lean-forward="true" selection-start-line="78" selection-start-column="50" selection-end-line="78" selection-end-column="50" />
+        <state relative-caret-position="377">
+          <caret line="110" column="108" selection-start-line="110" selection-start-column="108" selection-end-line="110" selection-end-column="108" />
           <folding>
-            <marker date="1527081961336" expanded="true" signature="3465:3546" ph="..." />
+            <element signature="e#6974#6980#0" expanded="true" />
+            <element signature="e#7008#7014#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="639">
-          <caret line="493" column="19" selection-start-line="493" selection-start-column="19" selection-end-line="493" selection-end-column="19" />
+        <state relative-caret-position="180">
+          <caret line="534" column="38" selection-start-line="534" selection-start-column="38" selection-end-line="534" selection-end-column="38" />
         </state>
       </provider>
     </entry>
