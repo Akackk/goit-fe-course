@@ -19,13 +19,8 @@
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="483">
-                  <caret line="40" column="37" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
-                  <folding>
-                    <element signature="e#3482#3488#0" expanded="true" />
-                    <element signature="e#6974#6980#0" expanded="true" />
-                    <element signature="e#7008#7014#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="422">
+                  <caret line="186" column="49" selection-start-line="186" selection-start-column="49" selection-end-line="186" selection-end-column="49" />
                 </state>
               </provider>
             </entry>
@@ -37,8 +32,8 @@
           <file leaf-file-name="styles.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/css/styles.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-1139">
-                  <caret line="710" column="25" selection-start-line="710" selection-start-column="25" selection-end-line="710" selection-end-column="25" />
+                <state relative-caret-position="490">
+                  <caret line="886" column="23" selection-start-line="886" selection-start-column="23" selection-end-line="886" selection-end-column="23" />
                 </state>
               </provider>
             </entry>
@@ -73,14 +68,22 @@
       <find>.any</find>
       <find>.any-sphere</find>
       <find>.begin-to-work:</find>
+      <find>never</find>
+      <find>begin-to-work</find>
+      <find>first-part</find>
+      <find>.first-part_title</find>
+      <find>.full</find>
+      <find>full-stack-developer_subtitle</find>
+      <find>relative</find>
+      <find>full-stack-developer_title</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/css/_header.scss" />
-        <option value="$PROJECT_DIR$/css/styles.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/css/styles.css" />
       </list>
     </option>
   </component>
@@ -104,6 +107,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -125,7 +129,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -161,12 +164,13 @@
       <workItem from="1526460140260" duration="13392000" />
       <workItem from="1526499939162" duration="26600000" />
       <workItem from="1526988911908" duration="25684000" />
-      <workItem from="1527243160481" duration="22360000" />
+      <workItem from="1527243160481" duration="30129000" />
+      <workItem from="1527442201780" duration="23292000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88036000" />
+    <option name="totallyTimeSpent" value="119097000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -186,10 +190,10 @@
       <window_info active="true" anchor="bottom" id="CSS Styles" order="11" weight="0.32897604" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,13 +205,22 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2788">
+          <caret line="164" column="66" selection-start-line="164" selection-start-column="66" selection-end-line="164" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9078">
+          <caret line="534" column="17" selection-start-line="534" selection-start-column="17" selection-end-line="534" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1955">
           <caret line="115" column="63" selection-start-line="115" selection-start-column="63" selection-end-line="115" selection-end-column="63" />
-          <folding>
-            <element signature="e#3482#3488#0" expanded="true" />
-            <element signature="e#6974#6980#0" expanded="true" />
-            <element signature="e#7008#7014#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -222,11 +235,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1003">
           <caret line="59" column="52" selection-start-line="59" selection-start-column="52" selection-end-line="59" selection-end-column="52" />
-          <folding>
-            <element signature="e#3482#3488#0" expanded="true" />
-            <element signature="e#6974#6980#0" expanded="true" />
-            <element signature="e#7008#7014#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -264,22 +272,17 @@
     <entry file="file://$PROJECT_DIR$/img/coruchka-1.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/styles.css">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1139">
-          <caret line="710" column="25" selection-start-line="710" selection-start-column="25" selection-end-line="710" selection-end-column="25" />
+        <state relative-caret-position="422">
+          <caret line="186" column="49" selection-start-line="186" selection-start-column="49" selection-end-line="186" selection-end-column="49" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="40" column="37" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
-          <folding>
-            <element signature="e#3482#3488#0" expanded="true" />
-            <element signature="e#6974#6980#0" expanded="true" />
-            <element signature="e#7008#7014#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="490">
+          <caret line="886" column="23" selection-start-line="886" selection-start-column="23" selection-end-line="886" selection-end-column="23" />
         </state>
       </provider>
     </entry>
