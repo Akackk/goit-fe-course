@@ -656,11 +656,11 @@ hr {
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.21);
     color: #fff;
     text-transform: uppercase;
-    margin: 0 auto;
 }
 
 .what-know {
     text-align: center;
+    margin-bottom: 60px;
 }
 
 /*SQUARES*/
