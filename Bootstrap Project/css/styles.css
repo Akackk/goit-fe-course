@@ -608,7 +608,7 @@ a {
     margin: 0 auto;
 }
 
-.back-end p {
+.back-end .database {
     font-size: 14px;
     font-family: var(--list-text);
     color: rgb(36, 36, 39);
@@ -621,6 +621,7 @@ hr {
     height: 3px;
     color: #242427;
     z-index: 2;
+    width: 89%;
 }
 
 .what-knowledge {
@@ -678,6 +679,19 @@ hr {
     display: none;
     position: absolute;
 }
+
+.img-320 {
+    display: block;
+}
+
+.img-768 {
+    display: none;
+}
+
+.img-1200 {
+    display: none;
+}
+
 
 @media (min-width: 768px) {
 
@@ -772,7 +786,7 @@ hr {
         text-transform: uppercase;
         line-height: 1.714;
         text-align: right;
-        padding-right: 90px;
+        /*padding-right: 90px;*/
     }
 
     .any-from .never-write .main-color {
@@ -901,6 +915,19 @@ hr {
     hr {
         width: 93%;
     }
+
+    .img-320 {
+        display: none;
+    }
+
+    .img-768 {
+        display: block;
+    }
+
+    .img-1200 {
+        display: none;
+    }
+
 
 }
 
@@ -1135,6 +1162,10 @@ hr {
         background: url("../img/bg-second-section.png") no-repeat 0 0;
     }
 
+    .any-from {
+        padding-right: 119px!important;
+    }
+
     .any-sphere {
         padding-top: 140px;
     }
@@ -1171,6 +1202,19 @@ hr {
     }
 
     /*Gray SECTION!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+    .full-stack-developer {
+        padding-left: 40px;
+    }
+
+    .full-stack-developer_title {
+        /*margin-left: 100px;*/
+    }
+
+
+
+
+
     .gray-subsection > h2 {
         font-size: 25px;
         font-family: var(--font-caption);
@@ -1178,6 +1222,53 @@ hr {
         text-transform: uppercase;
         line-height: 1.2;
         text-align: center;
+    }
+
+    .full-stack-developer_title .section-caption {
+        padding-right: 73px;
+    }
+
+    .full-stack-developer_title .you-can {
+        text-align: right;
+    }
+
+    .full-stack-developer_title .section-caption:after {
+        top: 192px;
+        /*width: 0px;*/
+        right: 30px;
+    }
+
+    .front-end_users {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .back-end .database {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+
+
+
+    .square-1 {
+        display: none;
+    }
+
+    .square-2 {
+        display: none;
+    }
+
+    .img-320 {
+        display: none;
+    }
+
+    .img-768 {
+        display: none;
+    }
+
+    .img-1200 {
+        display: block;
     }
 
 }

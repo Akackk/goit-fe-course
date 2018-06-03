@@ -13,14 +13,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5630713">
+    <splitter split-orientation="horizontal" split-proportion="0.60755634">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="405">
-                  <caret line="206" column="56" lean-forward="true" selection-start-line="206" selection-start-column="56" selection-end-line="206" selection-end-column="56" />
+                <state relative-caret-position="303">
+                  <caret line="220" column="47" selection-start-line="220" selection-start-column="47" selection-end-line="220" selection-end-column="47" />
                 </state>
               </provider>
             </entry>
@@ -32,8 +32,8 @@
           <file leaf-file-name="styles.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/css/styles.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="490">
-                  <caret line="662" column="23" selection-start-line="662" selection-start-column="23" selection-end-line="662" selection-end-column="23" />
+                <state relative-caret-position="231">
+                  <caret line="892" column="14" selection-start-line="892" selection-start-column="14" selection-end-line="892" selection-end-column="14" />
                 </state>
               </provider>
             </entry>
@@ -76,6 +76,9 @@
       <find>full-stack-developer_subtitle</find>
       <find>relative</find>
       <find>full-stack-developer_title</find>
+      <find>.any-from</find>
+      <find>.back-end</find>
+      <find>.front-end</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -165,12 +168,12 @@
       <workItem from="1526499939162" duration="26600000" />
       <workItem from="1526988911908" duration="25684000" />
       <workItem from="1527243160481" duration="30129000" />
-      <workItem from="1527442201780" duration="24297000" />
+      <workItem from="1527442201780" duration="35587000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="120102000" />
+    <option name="totallyTimeSpent" value="131392000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -274,15 +277,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="206" column="56" lean-forward="true" selection-start-line="206" selection-start-column="56" selection-end-line="206" selection-end-column="56" />
+        <state relative-caret-position="303">
+          <caret line="220" column="47" selection-start-line="220" selection-start-column="47" selection-end-line="220" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="662" column="23" selection-start-line="662" selection-start-column="23" selection-end-line="662" selection-end-column="23" />
+        <state relative-caret-position="231">
+          <caret line="892" column="14" selection-start-line="892" selection-start-column="14" selection-end-line="892" selection-end-column="14" />
         </state>
       </provider>
     </entry>
