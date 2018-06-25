@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		let sharm = 15;
+			hurgada = 25;
+			taba = 6;
+			// result = number_of_seats;
+
+		const number_of_seats = prompt('number of seats');
+
+		if (number_of_seats >=16 && number_of_seats <=25 ) {
+			confirm('Необходимое кол-во мест есть в группе Хургада! Согласны ли Вы на данную группу?')
+		} else if (number_of_seats >= 7 && number_of_seats <= 15 ) {
+			confirm('Необходимое кол-во мест есть в группах Хургада и Шарм! Согласны ли Вы на данную группу?')
+		} else if (number_of_seats <=6 && number_of_seats > 0 ) {
+			confirm('Необходимое кол-во мест есть в группах Хургада, Шарм и Таба! Согласны ли Вы на данные группы?')
+		} else  if (number_of_seats >= 26){
+			alert('Туров с таким кол-вом мест нету!')
+		} else {
+			alert('Ошибка ввода!')
+		}
+
+
+
+
+	</script>
+</body>
+</html>
