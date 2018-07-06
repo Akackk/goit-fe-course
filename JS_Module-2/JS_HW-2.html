@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+			const numbers = [];
+			let total = 0;
+			let userInput;
+
+
+			while (true) {
+
+			   userInput = prompt("Введите число", 0);
+
+			  if (userInput === "" || userInput === null || isNaN(userInput)) break;
+
+			  numbers.push(parseInt(userInput));
+			}
+
+			 total = 0;
+			for (let value of numbers) {
+			  
+			  total += value;
+			}
+
+			alert( total );
+
+	</script>
+</body>
+</html>

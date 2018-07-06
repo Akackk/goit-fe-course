@@ -6,23 +6,47 @@
 </head>
 <body>
 	<script>
-		const ADMIN_LOGIN = prompt('admin login');
+		// const ADMIN_LOGIN = prompt('admin login');
 		
 		
-		if (ADMIN_LOGIN == 'admin') {
-			const ADMIN_PASSWORD = prompt('admin password');
-		    if (ADMIN_PASSWORD == null) {
-				alert ('Отменено пользователем!')
-			} else if (ADMIN_PASSWORD == 'm4ngo1zh4ackz0r') {
-				alert ('Добро пожаловать!')
-			} else  {
-				alert ('Доступ запрещен!')
+		// if (ADMIN_LOGIN == 'admin') {
+		// 	const ADMIN_PASSWORD = prompt('admin password');
+		//     if (ADMIN_PASSWORD == null) {
+		// 		alert ('Отменено пользователем!')
+		// 	} else if (ADMIN_PASSWORD == 'm4ngo1zh4ackz0r') {
+		// 		alert ('Добро пожаловать!')
+		// 	} else  {
+		// 		alert ('Доступ запрещен!')
+		// 	}
+		//  } else if (ADMIN_LOGIN == null) {
+		//  	alert ('Отменено пользователем!')
+		//  } else {
+		//  	alert('Доступ запрещен!')
+		// }
+
+
+			const numbers = [];
+			let total = 0;
+			let userInput;
+
+
+			while (true) {
+
+			   userInput = prompt("Введите число", 0);
+
+			  if (userInput === "" || userInput === null || isNaN(userInput)) break;
+
+			  numbers.push(parseInt(userInput));
 			}
-		 } else if (ADMIN_LOGIN == null) {
-		 	alert ('Отменено пользователем!')
-		 } else {
-		 	alert('Доступ запрещен!')
-		}	
+
+			 total = 0;
+			for (let value of numbers) {
+			  
+			  total += value;
+			}
+
+			alert( total );
+
 	</script>
 </body>
 </html>
