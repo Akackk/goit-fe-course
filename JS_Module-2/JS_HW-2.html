@@ -7,7 +7,6 @@
 <body>
 	<script>
 			const numbers = [];
-			let total = 0;
 			let userInput;
 
 
@@ -15,18 +14,29 @@
 
 			   userInput = prompt("Введите число", 0);
 
-			  if (userInput === "" || userInput === null || isNaN(userInput)) break;
+			  if (userInput === "" || userInput === null) {
+			  		
+			  		break;
 
-			  numbers.push(parseInt(userInput));
+			  	} else if (isNaN(userInput)) {
+			  		alert('Вы ввели неверное значение');
+			  		break;
+
+				} else {
+					numbers.push(parseInt(userInput));
+				}
 			}
 
-			 total = 0;
+			 
+			let total = 0;
+
 			for (let value of numbers) {
 			  
 			  total += value;
 			}
 
-			alert( total );
+			let sumTotal = "Общая сумма чисел равна ${total}.";
+			alert(sumTotal);
 
 	</script>
 </body>

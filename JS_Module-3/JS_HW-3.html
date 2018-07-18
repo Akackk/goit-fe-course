@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Module-3</title>
+</head>
+<body>
+<script>
+
+
+    const logins = ["Mango", "robotGoogles", "Poly", "Aj4x1sBozz", "qwerty123"];
+    const userInput = prompt('Введите логин');
+
+
+    const addLogin = (loginsArr, login) => {
+
+        const checkLoginValidity = login => login.length >= 4 && login.length <= 16;
+        const checkIfLoginExists = (ls, l) => ls.includes(l);
+
+        // console.log(checkLoginValidity(login));
+        // console.log(checkIfLoginExists(logins, login));
+
+        const isLoginValid = checkLoginValidity(login);
+        const isLoginExists = checkIfLoginExists(loginsArr, login);
+
+        if (isLoginValid && !isLoginExists) {
+
+            return loginsArr.push(login);
+
+        } else {
+
+            alert('Убедитесь в правильности написания логина! Если все верно значит он уже занят!')
+
+        }
+
+    }
+
+    addLogin(logins, userInput);
+    console.log(logins);
+
+
+</script>
+</body>
+</html>
