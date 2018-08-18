@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>JS_HW-7</title>
+	<style>
+		html {
+			box-sizing: border-box;
+		}
+
+		*,
+		*::before,
+		*::after {
+			box-sizing: inherit;
+		}
+
+		body {
+			font-family: 'Roboto', sans-serif;
+			font-size: 16px;
+		}
+
+		img {
+			display: block;
+			max-width: 100%;
+			height: auto;
+		}
+
+		.post {
+			width: 400px;
+			padding: 8px;
+			box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.2);
+			border-radius: 2px;
+			color: #212121;
+			margin: 0 auto;
+		}
+
+		.post__image {
+			margin-bottom: 8px;
+		}
+
+		.post__title {
+			margin: 0;
+			margin-bottom: 16px;
+			font-size: 32px;
+			font-weight: 500;
+		}
+
+		.post__text {
+			margin: 0;
+			margin-bottom: 16px;
+			line-height: 1.5;
+		}
+
+		.button {
+			position: relative;
+			display: inline-block;
+			border: none;
+			border-radius: 3px;
+			padding: 0 1.5em;
+			vertical-align: top;
+
+			font-size: 15px;
+			line-height: 2.8;
+			color: #222;
+			text-transform: uppercase;
+			text-align: center;
+			white-space: nowrap;
+			font-family: inherit;
+			font-weight: 500;
+			text-decoration: none;
+
+			background-color: #fff;
+			overflow: hidden;
+			z-index: 0;
+			cursor: pointer;
+
+			box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3);
+			transition: background-color 0.3s, box-shadow 0.3s, opacity 0.3s, color 0.3s;
+			-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+		}
+
+		.button:hover {
+			box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.3);
+		}
+	</style>
+</head>
+
+<body>
+	<script>
+		/*
+  1. Модифицируйте готовую функцию createPostCard() из задания 
+    номер 6 (https://codepen.io/goit-fe-adv/pen/MVPaeZ) так, 
+    чтобы она принимала объект post с данными для заполнения полей 
+    в карточке.
+      
+  2. Создайте функцию createCards(posts), которая принимает массив
+    объектов-карточек, вызывает функцию createPostCard(post) столько
+    раз, сколько объектов в массиве, сохраняя общий результат и возвращает 
+    массив DOM-элементов всех постов.
+    
+  3. Повесьте все посты в какой-то уже существующий DOM-узел.
+*/
+
+		function createPostCard() {
+			const body = document.querySelector('body');
+			const div = document.createElement('div');
+			const img = document.createElement('img');
+			const h2 = document.createElement('h2');
+			const p = document.createElement('p');
+			const a = document.createElement('a');
+			body.appendChild(div);
+			div.setAttribute('class', 'post');
+			div.appendChild(img);
+			div.appendChild(h2);
+			div.appendChild(p);
+			div.appendChild(a);
+			img.setAttribute('class', 'post__image');
+			img.setAttribute('src', `${posts[i].img}`);
+			img.setAttribute('alt', 'post image');
+			h2.setAttribute('class', 'post__title');
+			h2.textContent = `${posts[i].title}`;
+			p.setAttribute('class', 'post__text');
+			p.textContent = `${posts[i].text}`;
+			a.setAttribute('class', 'button');
+			a.setAttribute('href', `${posts[i].link}`);
+			a.textContent = 'Read more';
+		};
+
+		const posts = [
+			{
+				img: "https://placeimg.com/400/150/arch",
+				title: "Post title 1",
+				text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, nemo dignissimos ea temporibus voluptatem maiores maxime consequatur impedit nobis sunt similique voluptas accusamus consequuntur, qui modi nesciunt veritatis distinctio rem!",
+				link: 'link-1.com'
+			},
+			{
+				img: "https://placeimg.com/400/150/nature",
+				title: "Post title 2",
+				text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, nemo dignissimos ea temporibus voluptatem maiores maxime consequatur impedit nobis sunt similique voluptas accusamus consequuntur, qui modi nesciunt veritatis distinctio rem!",
+				link: 'link-2.com'
+			},
+			{
+				img: "https://placeimg.com/400/150/arch",
+				title: "Post title 3",
+				text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, nemo dignissimos ea temporibus voluptatem maiores maxime consequatur impedit nobis sunt similique voluptas accusamus consequuntur, qui modi nesciunt veritatis distinctio rem!",
+				link: 'link-3.com'
+			}
+		];
+
+
+		function createCards(posts) {
+			for (i = 0; i < posts.length; i++) {
+				createPostCard();
+			};
+		};
+		createCards(posts);
+
+
+
+	</script>
+</body>
+
+</html>
