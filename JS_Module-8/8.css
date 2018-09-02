@@ -1,0 +1,21 @@
+.image-gallery {
+	width: 550px;
+	margin: auto;
+	flex-direction: column;
+}
+
+.preview {
+	height: auto;
+	display: flex;
+	justify-content: space-between;
+	padding: 0;
+}
+
+.preview li {
+	list-style: none;
+	display: flex;
+}
+
+.active {
+	outline: 5px solid gray;
+}
