@@ -176,7 +176,7 @@ refs.formUpdate.addEventListener("submit", handleUpdateUserInfo);
 function handleUpdateUserInfo(evt) {
 	evt.preventDefault();
 	fetchUpdate();
-	// updateUserInfo();
+	updateUserInfo();
 };
 
 function fetchUpdate() {
@@ -193,30 +193,14 @@ function fetchUpdate() {
 		}
 	})
 
-		.then(response => {
-			if (response.ok) return response.json();
-			throw new Error("Error fetching data");
-		})
-		.then(data => {
-			// console.log(data.status);
-			if (data.status === 200) {
-				refs.resultUpdate.textContent = `Данные пользователя ${refs.inputUpdateId.value} обновлены!`;
-			} else {
-				console.log(data.status);
-				refs.resultUpdate.textContent = `Пользователя с ID: ${refs.inputUpdateId.value} не существует`;
-			}
-		})
-		.catch(err => {
-			console.log("Error: ", err);
-		});
+		.then(response => response.json())
+		.then(data => console.log(data))
+		.catch(error => console.log('ERROR' + error));
 };
 
-// function updateUserInfo() {
-	// if (refs.inputUpdateId.value !== 'undefind') {
-	// refs.resultUpdate.textContent = `Данные пользователя ${refs.inputUpdateId.value} обновлены!`;
-	// } else { refs.resultUpdate.textContent = `Пользователя с ID: ${refs.inputUpdateId.value} не существует` 
-	// };
-// };
+function updateUserInfo() {
+	refs.resultUpdate.textContent = `Данные пользователя ${refs.inputUpdateId.value} обновлены!`;
+};
 
 
 
