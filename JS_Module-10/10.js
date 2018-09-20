@@ -92,19 +92,20 @@ function handleGetUserId(evt) {
 
 function getUserById(id) {
 	const array = id.data;
-	console.log(array);
+	// console.log(array);
 	const user = array.find(el => el.id === refs.inpUserById.value);
 	// console.log(user);
-	if (user === 'undefind') {
+	if (user === undefined) {
 		refs.resultUserById.textContent = `Пользователь ${refs.inpUserById.value} не найден`
-	};
-	refs.resultUserById.innerHTML = `
+	} else {
+		refs.resultUserById.innerHTML = `
 	<ul>
 		<li>ID: ${user.id}</li>
 		<li>NAME: ${user.name}</li>
 		<li>AGE: ${user.age}.</li>
 		</ul>
 	`
+	}
 };
 
 
@@ -135,7 +136,7 @@ function fetchNewUser(name, age) {
 		}
 	})
 		.then(response => response.json())
-		.then(data => console.log(data))
+		// .then(data => console.log(data))
 		.catch(error => console.log('ERROR' + error));
 };
 
@@ -164,8 +165,26 @@ function findUserById(inf) {
 function fetchRemUser() {
 	fetch(`https://test-users-api.herokuapp.com/users/${refs.inputRemoveUser.value}`, {
 		method: 'DELETE'
-	}).then(() => console.log('success'))
-		.catch(error => console.log('ERROR' + error));
+	})
+		// .then(() => console.log('success'))
+		// .catch(error => console.log('ERROR' + error));
+		.then(response => {
+			if (response.ok) return response.json();
+			throw new Error("Error fetching data");
+		})
+		.then(data => {
+			// console.log(data.status);
+			if (data.status === 200) {
+				refs.resultRemoveUser.textContent = `Данные пользователя ${refs.inputRemoveUser.value} удалены!`;
+			} else {
+				// console.log(data.status);
+				refs.resultRemoveUser.textContent = `Пользователя с ID: ${refs.inputRemoveUser.value} не существует`;
+			}
+		})
+		.catch(err => {
+			console.log("Error: ", err);
+		});
+
 };
 
 // функция updateUser(id, user) - должна обновлять данные пользователя по id. 
@@ -202,7 +221,7 @@ function fetchUpdate() {
 			if (data.status === 200) {
 				refs.resultUpdate.textContent = `Данные пользователя ${refs.inputUpdateId.value} обновлены!`;
 			} else {
-				console.log(data.status);
+				// console.log(data.status);
 				refs.resultUpdate.textContent = `Пользователя с ID: ${refs.inputUpdateId.value} не существует`;
 			}
 		})
