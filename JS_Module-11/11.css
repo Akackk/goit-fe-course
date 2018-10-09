@@ -1,0 +1,126 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+:root { overflow-y: scroll; }
+
+body {
+  padding: 10px;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  
+}
+
+ul {
+  list-style: none;
+}
+.wrapper {
+  display: flex;
+}
+
+aside {
+  width: 200px;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+
+main {
+  flex-grow: 1;
+  background-color: #eef;
+}
+
+.products {
+  padding: 10px;
+}
+.products__list{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.products__card {
+  flex: 0 0 32%;
+  margin-right: 2%;
+  margin-bottom: 20px;
+  background-color: #fff;
+
+}
+
+.products__card:nth-child(3n+1):nth-last-child(1),
+.products__card:nth-child(3n+1):nth-last-child(2), 
+.products__card:nth-child(3n+1):nth-last-child(3),
+
+.products__card:nth-child(3n+2):nth-last-child(1),
+.products__card:nth-child(3n+2):nth-last-child(2),
+
+.products__card:nth-child(3n+3):nth-last-child(1)
+
+{
+  margin-bottom: 0;
+}
+
+.products__card:nth-child(3n+3) {
+  margin-right: 0;
+}
+
+
+
+.card {
+  box-sizing: border-box;
+  padding: 15px;
+  border: 1px solid;
+}
+
+.card__img-cont {
+  width: 60%;
+  margin: 0 auto 15px;
+}
+
+
+.card__img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.card__cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card__props-cont {
+  flex-grow: 0.5;
+  margin-bottom: 15px;
+}
+
+.card__price {
+  font-weight: 600;
+  font-size: 20px;
+}
+.card__price::before {
+  content: "$";
+  font-size: 24px;
+}
+
+.card__size, 
+.card__color,
+.card__date {
+
+}
+
+.card__color-box{
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  box-sizing: border-box;
+  border: 1px solid;
+
+}
+
+.card__name {
+  font-weight: 600;
+  font-style: 22px;
+}
