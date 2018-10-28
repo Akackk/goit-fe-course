@@ -53,7 +53,7 @@ function handleDelBtn(e) {
 
   // console.log(e.target.closest("div").childNodes[4].name);
 
-  localStorage.removeItem(e.target.closest("div").childNodes[4].name);
+  localStorage.removeItem(e.target.closest("div").children[2].name);
   e.target.parentElement.remove();
 }
 
